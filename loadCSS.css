@@ -1,0 +1,19 @@
+.red{
+  background-color: red;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.title{
+  border: 1px solid #ccc;
+  background-color: grey;
+  padding: 10px;
+}
+
+.user{
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 5px;
+}
