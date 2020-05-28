@@ -1,0 +1,50 @@
+<script src="https://unpkg.com/vue/dist/vue.js">
+</script>
+
+<div id="app">
+
+<div class = "title">
+   <p> {{ title | uppercase }} </p>
+</div>
+
+
+<button v-on:click="changeTitle">Change Title</button>
+<hr>
+
+<button v-on:click="incrementMe">Increment me
+</button>
+
+<p> Counter Value: {{ counter }} </p>
+<p> Click Value : {{ click }}   </p>
+
+<hr>
+
+<button v-on:click="show = !show">
+HIDE
+</button>
+
+<p v-if="show">
+Hide me please... !!
+</p>
+<p v-else>
+Don't hide me... !!
+</p>
+<p v-show = "show">
+ YEs ..I see u
+</p>
+<hr>
+<ul>
+<li v-for="(person,index) in persons"> {{ person.name }} - {{ index }}</li>
+</ul>
+
+<app-user></app-user>
+
+<hr>
+<input type = "text" v-on:input="cssClass = $event.target.value">
+<p v-bind:class = "cssClass">
+Class: {{ cssClass}}
+</p>
+
+<hr>
+
+</div>
